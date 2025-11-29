@@ -1,5 +1,10 @@
-import java.util.*;
 import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -74,7 +79,6 @@ public class PolicyManager {
     private void printHeader() {
         System.out.println("=======================================");
         System.out.println("   Policy Holder Management Console");
-        System.out.println("   (Java Fresher - 0 to 1 year)");
         System.out.println("=======================================");
     }
 
@@ -287,9 +291,9 @@ public class PolicyManager {
 
     /** Optional: add a couple of sample policies to demonstrate features quickly */
     private void seedSampleData() {
-        PolicyHolder p1 = new PolicyHolder("PH-001", "John Doe", 120000.0, 5);
-        PolicyHolder p2 = new PolicyHolder("PH-002", "Alice Smith", 75000.0, 3);
-        PolicyHolder p3 = new PolicyHolder("PH-003", "Bob Kumar", 200000.0, 10);
+        PolicyHolder p1 = new PolicyHolder("PH-001", "ashhar kaunain khan", 120000.0, 5);
+        PolicyHolder p2 = new PolicyHolder("PH-002", "rahul kumar", 75000.0, 3);
+        PolicyHolder p3 = new PolicyHolder("PH-003", "ajay Kumar", 200000.0, 10);
         policyMap.put(p1.getPolicyId(), p1);
         policyMap.put(p2.getPolicyId(), p2);
         policyMap.put(p3.getPolicyId(), p3);
